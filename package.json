@@ -1,7 +1,7 @@
 {
   "name": "com.bugsarefeatures.wfc-generator",
   "displayName": "WFC Generator",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "unity": "2021.3",
   "author": {
     "name": "Creamos",
@@ -11,8 +11,8 @@
   "maintainers": [
     {
       "name": "Creamos",
-      "url": "https://github.com/creamos"
-
+      "url": "https://github.com/creamos",
+      "email": "alacroix.dev.pro@gmail.com"
     },
     {
       "name": "Thomas Boulanger",
