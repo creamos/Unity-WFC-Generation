@@ -1,11 +1,4 @@
-# Unity - WFC-Generation
-[![upm-packages](https://img.shields.io/badge/upm_packages-v0.1-green.svg)](https://upm-packages.dev/-/web/detail/com.bugsarefeatures.wfc-generator/)
-[![github](https://img.shields.io/badge/github-v0.1-yellow.svg)](https://github.com/creamos/Unity-WFC-Generation/tree/main/)
-[![Unity 2021.3+](https://img.shields.io/badge/unity-2021.3%2B-blue.svg)](https://unity3d.com/get-unity/download)
-[![License: GNU-GPL3](https://img.shields.io/badge/License-GNU_GPL3-orange.svg)](https://github.com/creamos/Unity-WFC-Generation/blob/main/LICENSE)
-
-WFC Generator is an extension for Unity.
-It offers tools to generate environments in 3D using a Wave Function Collapse algorithm. The generation is based on user-generated 3D modules with defined connectivity between each others.
+# WFC - Generator : Official Documentation
 
 ## System Requirements
 
@@ -37,13 +30,9 @@ The package also has its own scoped registry. You can add it to your project by 
 }
 ```
 
-## Documentation
-
-[Documentation](https://github.com/creamos/Unity-WFC-Generation/tree/main/Documentation~/Documentation.md)
-
 # Overview
 
-## Modules
+### Modules
 
 The modules are the pieces used by the generator to assemble an environment.
 They are assemble in onto a 3d grid with one module per cell.
@@ -128,10 +117,3 @@ In the inspector, you can then configure how you want the generation to happens.
 Various parameters such as the size of the map can be configured.
 Genertion can be performed in a single frame outside of playmode but it will results in a freeze while the script performs the wfc generation.
 Generation can be configured to asynchronous, this way in playmode, generation will be performed progressively over time or in a step-by-step fashion controlled by pressing the spacebar.
-
-# Credits
-
-Special thanks to [marian42](https://marian42.de/article/wfc/) :
-Some logics regarding the way the modules connectivity is handled, were inspired from his/her works on WFC generation.
-
-[![marian42's work showcase](https://img.youtube.com/vi/-W7zt8181Zo/0.jpg)](//www.youtube.com/watch?v=-W7zt8181Zo "marian42's work showcase")
