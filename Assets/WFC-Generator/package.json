@@ -1,16 +1,21 @@
 {
   "name": "com.bugsarefeatures.wfc-generator",
   "displayName": "WFC Generator",
-  "version": "0.1.0",
+  "version": "0.3.0",
   "unity": "2021.3",
-  "authors": [
+  "author": {
+    "name": "Creamos",
+    "email": "alacroix.dev.pro@gmail.com",
+    "url": "https://github.com/creamos"
+  },
+  "maintainers": [
     {
       "name": "Creamos",
-      "url": "https://github.com/creamos"
-
+      "url": "https://github.com/creamos",
+      "email": "alacroix.dev.pro@gmail.com"
     },
     {
-      "name": "Elootam",
+      "name": "Thomas Boulanger",
       "url": "https://github.com/thomasboulanger"
     }
   ],
@@ -36,5 +41,5 @@
   "bugs": {
     "url": "https://github.com/creamos/Unity-WFC-Generation/issues"
   },
-  "homepage": "https://github.com/creamos/Unity-WFC-Generation"
+  "homepage": "https://github.com/creamos/Unity-WFC-Generation/blob/main/README.md"
 }
