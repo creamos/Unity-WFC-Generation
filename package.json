@@ -1,14 +1,14 @@
 {
   "name": "com.bugsarefeatures.wfc-generator",
   "displayName": "WFC Generator",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "unity": "2021.3",
   "author": {
     "name": "Creamos",
     "email": "alacroix.dev.pro@gmail.com",
     "url": "https://github.com/creamos"
   },
-  "authors": [
+  "maintainers": [
     {
       "name": "Creamos",
       "url": "https://github.com/creamos"

@@ -1,6 +1,6 @@
 # Unity - WFC-Generation
-[![upm-packages](https://img.shields.io/badge/upm_packages-v0.1-green.svg)](https://upm-packages.dev/-/web/detail/com.bugsarefeatures.wfc-generator/)
-[![github](https://img.shields.io/badge/github-v0.1-yellow.svg)](https://github.com/creamos/Unity-WFC-Generation/tree/main/)
+[![upm-packages](https://img.shields.io/badge/upm_packages-v0.2-green.svg)](https://upm-packages.dev/-/web/detail/com.bugsarefeatures.wfc-generator/)
+[![github](https://img.shields.io/badge/github-v0.2-yellow.svg)](https://github.com/creamos/Unity-WFC-Generation/tree/main/)
 [![Unity 2021.3+](https://img.shields.io/badge/unity-2021.3%2B-blue.svg)](https://unity3d.com/get-unity/download)
 [![License: GNU-GPL3](https://img.shields.io/badge/License-GNU_GPL3-orange.svg)](https://github.com/creamos/Unity-WFC-Generation/blob/main/LICENSE)
 
