@@ -1,0 +1,40 @@
+{
+  "name": "com.bugsarefeatures.wfc-generator",
+  "displayName": "WFC Generator",
+  "version": "0.1.0",
+  "unity": "2021.3",
+  "authors": [
+    {
+      "name": "Creamos",
+      "url": "https://github.com/creamos"
+
+    },
+    {
+      "name": "Elootam",
+      "url": "https://github.com/thomasboulanger"
+    }
+  ],
+  "description": "WFC Generator is a Unity package that provides a tools\nto procedurally generate environments.\n\n\nTo find out more, click the \"View documentation\" button.",
+  "keywords": [
+    "wfc",
+    "generator",
+    "wave",
+    "function",
+    "collapse",
+    "system",
+    "tools",
+    "unity"
+  ],
+  "category": "Tools",
+  "type": "tool",
+  "documentationUrl": "https://github.com/creamos/Unity-WFC-Generation/tree/main/Documentation~/Documentation.md",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com:creamos/Unity-WFC-Generation.git#package"
+  },
+  "license": "LGPL-3.0-only",
+  "bugs": {
+    "url": "https://github.com/creamos/Unity-WFC-Generation/issues"
+  },
+  "homepage": "https://github.com/creamos/Unity-WFC-Generation"
+}

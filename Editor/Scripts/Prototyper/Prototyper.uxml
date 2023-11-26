@@ -1,0 +1,96 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="True">
+    <Style src="project://database/Assets/0_Scripts/Editor/Prototyper/Prototyper.uss?fileID=7433441132597879392&amp;guid=b662e3e80dfe0204a905a91cfcf95dcb&amp;type=3#Prototyper" />
+    <ui:ScrollView style="flex-grow: 1; flex-shrink: 1;">
+        <ui:VisualElement name="baking-panel" class="section-panel" style="margin-left: 3px; margin-right: 3px; margin-top: 3px; margin-bottom: 3px; background-color: rgb(79, 79, 79); flex-grow: 1; flex-shrink: 0; border-left-color: rgb(229, 154, 105); border-right-color: rgb(229, 154, 105); border-top-color: rgb(229, 154, 105); border-bottom-color: rgb(229, 154, 105);">
+            <ui:Label text="• Data baking :" display-tooltip-when-elided="true" name="header" class="header" style="background-color: rgb(185, 95, 34); -unity-text-align: upper-left; padding-left: 8px;" />
+            <ui:VisualElement style="-unity-background-image-tint-color: rgb(255, 255, 255); align-items: center; padding-left: 5px; padding-right: 5px; padding-top: 5px; padding-bottom: 5px;">
+                <ui:Button text="Extract &amp; Bake Data" display-tooltip-when-elided="true" name="bake-button" class="bake-button" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement name="left-panel" style="max-height: 200px;">
+            <ui:VisualElement class="section-panel" style="border-left-color: rgb(32, 72, 130); border-right-color: rgb(32, 72, 130); border-top-color: rgb(32, 72, 130); border-bottom-color: rgb(32, 72, 130); background-color: rgb(79, 79, 79);">
+                <ui:VisualElement name="header" class="header" style="flex-direction: row; background-color: rgb(12, 50, 106); flex-shrink: 0;">
+                    <ui:Label text="#" display-tooltip-when-elided="true" name="prototypes-count" style="flex-shrink: 1; width: 40px; -unity-text-align: upper-center; background-color: rgb(12, 40, 82);" />
+                    <ui:Label text="Loaded Prototypes" display-tooltip-when-elided="true" style="-unity-text-align: upper-center; flex-grow: 1;" />
+                </ui:VisualElement>
+                <ui:ScrollView style="flex-direction: row; flex-wrap: wrap; flex-shrink: 1;">
+                    <ui:VisualElement name="prototypes-list" style="flex-direction: row; flex-wrap: wrap;" />
+                </ui:ScrollView>
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement name="details-panel" style="flex-grow: 1; flex-shrink: 0;">
+            <ui:VisualElement name="selected-prototype-panel" style="flex-direction: row; flex-grow: 1; align-items: flex-start; flex-shrink: 1;">
+                <ui:VisualElement name="prototype-details" class="section-panel" style="background-color: rgb(79, 79, 79); border-left-color: rgb(50, 149, 68); border-right-color: rgb(50, 149, 68); border-top-color: rgb(50, 149, 68); border-bottom-color: rgb(50, 149, 68); flex-shrink: 0; max-width: 300px;">
+                    <ui:VisualElement name="header" class="header" style="flex-direction: row; background-color: rgb(12, 99, 28); border-left-color: rgb(87, 159, 97); border-right-color: rgb(87, 159, 97); border-top-color: rgb(87, 159, 97); border-bottom-color: rgb(87, 159, 97); flex-shrink: 0;">
+                        <ui:Label text="#0" display-tooltip-when-elided="true" name="prototype-id" style="flex-shrink: 1; width: 40px; -unity-text-align: upper-center; background-color: rgb(0, 82, 15);" />
+                        <ui:Label text="Stair_0" display-tooltip-when-elided="true" name="prototype-name" style="-unity-text-align: upper-center; flex-grow: 1;" />
+                        <ui:Label text="#flag" display-tooltip-when-elided="true" name="prototype-flag" style="-unity-text-align: upper-center; flex-grow: 1;" />
+                    </ui:VisualElement>
+                    <ui:VisualElement style="flex-direction: row; margin-left: 5px; margin-right: 5px; margin-top: 5px; margin-bottom: 5px; background-color: rgb(53, 53, 53); border-left-width: 5px; border-right-width: 5px; border-top-width: 5px; border-bottom-width: 5px; flex-shrink: 0;">
+                        <ui:VisualElement name="prototype-preview" style="background-image: url(&apos;project://database/Packages/com.unity.collab-proxy/Editor/PlasticSCM/Assets/Images/buttonssosigninunity.png?fileID=2800000&amp;guid=f9161c6c9e06dc445ada3ee16d991f90&amp;type=3#buttonssosigninunity&apos;); width: 64px; height: 64px; -unity-background-scale-mode: scale-to-fit;" />
+                        <ui:VisualElement style="flex-grow: 1; flex-shrink: 0; padding-left: 5px;">
+                            <ui:VisualElement style="flex-direction: row;">
+                                <ui:Label text="Weight : 5" display-tooltip-when-elided="true" name="prototype-weight" style="width: 50%;" />
+                                <ui:Label text="Angle : 90°" display-tooltip-when-elided="true" name="prototype-angle" style="width: 50%;" />
+                            </ui:VisualElement>
+                            <ui:VisualElement name="prototype-sockets" style="width: 100%; flex-direction: column;">
+                                <ui:Label text="Sockets : " display-tooltip-when-elided="true" style="-unity-font-style: bold; margin-top: 5px;" />
+                                <ui:VisualElement style="flex-direction: column; flex-grow: 1;">
+                                    <ui:VisualElement style="flex-direction: row;">
+                                        <ui:Button text="1f" display-tooltip-when-elided="true" name="socket-xPrev" class="button-x" />
+                                        <ui:Button text="2f" display-tooltip-when-elided="true" name="socket-yPrev" class="button-y" />
+                                        <ui:Button text="1_2" display-tooltip-when-elided="true" name="socket-zPrev" class="button-z" />
+                                    </ui:VisualElement>
+                                    <ui:VisualElement style="flex-direction: row;">
+                                        <ui:Button text="6" display-tooltip-when-elided="true" name="socket-xNext" class="button-x" />
+                                        <ui:Button text="0s" display-tooltip-when-elided="true" name="socket-yNext" class="button-y" />
+                                        <ui:Button text="6_0" display-tooltip-when-elided="true" name="socket-zNext" class="button-z" />
+                                    </ui:VisualElement>
+                                </ui:VisualElement>
+                            </ui:VisualElement>
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+                    <ui:VisualElement name="prototype-connections" style="width: 100%; border-left-width: 3px; border-right-width: 3px; border-top-width: 3px; border-bottom-width: 3px; flex-shrink: 0;">
+                        <ui:VisualElement>
+                            <ui:Label text="-X" display-tooltip-when-elided="true" style="background-color: rgb(200, 40, 40);" />
+                            <ui:Button text="5 connections" display-tooltip-when-elided="true" name="connection-xPrev" />
+                        </ui:VisualElement>
+                        <ui:VisualElement>
+                            <ui:Label text="+X" display-tooltip-when-elided="true" style="background-color: rgb(200, 40, 40);" />
+                            <ui:Button text="1000 connections" display-tooltip-when-elided="true" name="connection-xNext" />
+                        </ui:VisualElement>
+                        <ui:VisualElement>
+                            <ui:Label text="-Y" display-tooltip-when-elided="true" style="background-color: rgb(50, 142, 42);" />
+                            <ui:Button text="5 connections" display-tooltip-when-elided="true" name="connection-yPrev" />
+                        </ui:VisualElement>
+                        <ui:VisualElement>
+                            <ui:Label text="+Y" display-tooltip-when-elided="true" style="background-color: rgb(50, 142, 42);" />
+                            <ui:Button text="5 connections" display-tooltip-when-elided="true" name="connection-yNext" />
+                        </ui:VisualElement>
+                        <ui:VisualElement>
+                            <ui:Label text="+Z" display-tooltip-when-elided="true" style="background-color: rgb(58, 92, 195);" />
+                            <ui:Button text="1000 connections" display-tooltip-when-elided="true" name="connection-zPrev" />
+                        </ui:VisualElement>
+                        <ui:VisualElement>
+                            <ui:Label text="-Z" display-tooltip-when-elided="true" style="color: rgb(255, 255, 255); background-color: rgb(58, 92, 195); -unity-text-align: middle-center;" />
+                            <ui:Button text="5 connections" display-tooltip-when-elided="true" name="connection-zNext" />
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+                </ui:VisualElement>
+                <ui:VisualElement name="connection-details" class="section-panel" style="background-color: rgb(79, 79, 79); flex-shrink: 1; border-left-color: rgb(106, 106, 106); border-right-color: rgb(106, 106, 106); border-top-color: rgb(106, 106, 106); border-bottom-color: rgb(106, 106, 106); flex-grow: 1;">
+                    <ui:VisualElement name="header" class="header" style="flex-direction: row; background-color: rgb(36, 36, 36); border-left-color: rgb(176, 176, 176); border-right-color: rgb(176, 176, 176); border-top-color: rgb(176, 176, 176); border-bottom-color: rgb(176, 176, 176); flex-shrink: 0; white-space: nowrap;">
+                        <ui:Label text="-X" display-tooltip-when-elided="true" name="selected-socket" picking-mode="Ignore" style="flex-shrink: 1; width: 40px; -unity-text-align: upper-center; overflow: hidden;" />
+                        <ui:Label text="Connections" display-tooltip-when-elided="true" style="-unity-text-align: upper-center; flex-grow: 1; overflow: hidden;" />
+                    </ui:VisualElement>
+                    <ui:ScrollView name="connections-scrollview" style="flex-shrink: 1;">
+                        <ui:VisualElement name="connections-list" style="flex-direction: row; flex-wrap: wrap; flex-grow: 1; flex-shrink: 0;" />
+                    </ui:ScrollView>
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:VisualElement name="error-panel" style="background-color: rgb(51, 42, 42); border-left-color: rgb(168, 26, 26); border-right-color: rgb(168, 26, 26); border-top-color: rgb(168, 26, 26); border-bottom-color: rgb(168, 26, 26); border-left-width: 1px; border-right-width: 1px; border-top-width: 1px; border-bottom-width: 1px; display: none;">
+                <ui:Label text="Error :" display-tooltip-when-elided="true" class="header" style="font-size: 16px; -unity-font-style: bold; color: rgb(214, 214, 214); height: 25px; padding-left: 5px; -unity-text-align: middle-left; background-color: rgb(96, 10, 10);" />
+                <ui:Label text="The selected prototype isn&apos;t properly.\nYou may need to rebake data." display-tooltip-when-elided="true" name="error-label" style="flex-grow: 1; white-space: normal; padding-left: 8px; padding-right: 8px; padding-top: 8px; padding-bottom: 8px;" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:ScrollView>
+</ui:UXML>
