@@ -7,13 +7,6 @@
 WFC Generator is an extension for Unity.
 It offers tools to generate environments in 3D using a Wave Function Collapse algorithm. The generation is based on user-generated 3D modules with defined connectivity between each others.
 
-## Credits
-
-Special thanks to [marian42](https://marian42.de/article/wfc/) :
-Some logics regarding the way the modules connectivity is handled, were inspired from his/her works on WFC generation.
-
-[![marian42's work showcase](https://img.youtube.com/vi/-W7zt8181Zo/0.jpg)](//www.youtube.com/watch?v=-W7zt8181Zo "marian42's work showcase")
-
 ## System Requirements
 
 WFC Generator was developed for Unity **2021.3** and later versions. It may works on previous versions, though it wasn't tested.
@@ -135,3 +128,10 @@ In the inspector, you can then configure how you want the generation to happens.
 Various parameters such as the size of the map can be configured.
 Genertion can be performed in a single frame outside of playmode but it will results in a freeze while the script performs the wfc generation.
 Generation can be configured to asynchronous, this way in playmode, generation will be performed progressively over time or in a step-by-step fashion controlled by pressing the spacebar.
+
+# Credits
+
+Special thanks to [marian42](https://marian42.de/article/wfc/) :
+Some logics regarding the way the modules connectivity is handled, were inspired from his/her works on WFC generation.
+
+[![marian42's work showcase](https://img.youtube.com/vi/-W7zt8181Zo/0.jpg)](//www.youtube.com/watch?v=-W7zt8181Zo "marian42's work showcase")
